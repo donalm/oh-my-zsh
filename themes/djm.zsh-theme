@@ -13,7 +13,7 @@ fi
 local current_dir='%{$terminfo[bold]$fg[blue]%}%~%{$reset_color%}'
 local git_branch='$(git_prompt_info)%{$reset_color%}'
 
-curdate="%{$terminfo[bold]$fg[grey]%}[%D{%Y-%m-%f} %@]%{$reset_color%}"
+curdate="%{$terminfo[bold]$fg[grey]%}[%D{%Y-%m-%f}]%{$reset_color%}"
 curtime="%{$terminfo[bold]$fg[grey]%}%D{%L:%M:%S}%{$reset_color%}"
 
 PROMPT="╭─${user_host} ${current_dir} ${git_branch}
